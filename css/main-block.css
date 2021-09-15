@@ -1,0 +1,121 @@
+.main-block {
+    position: relative;
+}
+.main-block__container {
+}
+._container {
+}
+.main-block__body {
+    padding: 184px 0px 191px 0px;
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+}
+@media (max-width: 992px) { /*сделали более прозрачную картинку, что бы главный текст хорошо читался*/
+    .main-block__body{
+        padding: 120px 0px 191px 0px;
+    }
+}
+@media (max-width: 479px) { /*сделали более прозрачную картинку, что бы главный текст хорошо читался*/
+    .main-block__body{
+        padding: 115px 0px 160px 0px;
+    }
+}
+.main-block__body > *:not(:last-child) { /*обращаемся ко всем обьектам 1го уровна блочных тегов, * любой тег*/
+    margin: 0px 0px 35px 0px;
+}
+.main-block__title {
+    font-size: 58px;
+    line-height: 137%;
+    letter-spacing: 0.2px;
+    font-weight: 800;
+}
+
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+}
+.main-block__text {
+    color: #737373;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+@media (max-width: 479px) {
+    .main-block__text {
+        color: #5a5a5a;
+    }
+}
+
+.main-block__buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -10px 0px;
+}
+.main-block__button {
+    border-radius: 37px;
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 150%;
+    padding: 5px 36px;
+    margin: 10px 0px;
+}
+
+@media (max-width: 479px) { /*увеличим размер кнопок*/
+    .main-block__button {
+        flex: 1 1 100%;
+    }
+}
+@media (min-width: 479px) {
+    .main-block__button:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.main-block__button_orange {
+    background: #FF7B47;
+    color: white;
+}
+.main-block__button_orange:hover {
+    background: white;
+    color: #FF7B47;
+    border: 1px solid #FF7B47;
+    transition: 0.3s;
+}
+.main-block__button_border {
+    color: #0D5C63;
+    border: 1px solid #0D5C63;
+}
+.main-block__button_border:hover {
+    background: white;
+    color: #FF7B47;
+    border: 1px solid #FF7B47;
+    transition: 0.3s;
+}
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 1300px) { /*при адаптиве что бы люди на картинке не обрезадись*/
+    .main-block__image img{
+        object-position: right;
+    }
+}
+
+@media (max-width: 992px) { /*сделали более прозрачную картинку, что бы главный текст хорошо читался*/
+    .main-block__image img {
+        opacity: 0.5;
+    }
+}
+.main-block__image img {
+}

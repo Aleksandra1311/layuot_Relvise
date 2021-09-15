@@ -1,0 +1,28 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /*что бы все секции были в колонку, header main footer*/
+}
+._container {
+    max-width: 1046px;
+    padding: 0px 15px;
+    margin: 0 auto; /*контейнер выстроит любой блочный блок по средине */
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; /*растяг идобр на весь контейнер*/
+}
+@media (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
+}
